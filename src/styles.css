@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+/* Add this CSS to your global styles (e.g., styles.css) or component-specific CSS file */
+
+
+  
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  

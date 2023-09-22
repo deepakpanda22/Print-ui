@@ -1,0 +1,34 @@
+
+  
+  .contact-footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+  }
+  
+  .contact-footer h3 {
+    color: #fff;
+  }
+  
+  .contact-footer p {
+    margin-bottom: 10px;
+  }
+  
+  .contact-footer ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .contact-footer ul li {
+    margin-bottom: 5px;
+  }
+  
+  .contact-footer ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .contact-footer ul li a:hover {
+    text-decoration: underline;
+  }
+  
