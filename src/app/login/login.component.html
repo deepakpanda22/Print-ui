@@ -1,0 +1,51 @@
+<div class="container login-gradient-bg">
+    <div class="container">
+        <div class="row justify-content-center align-items-center min-vh-100">
+          <div class="col-md-6">
+            <div class="card shadow-lg">
+              <div class="card-body p-5">
+                <h2 class="text-center mb-4">Login</h2>
+                <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                  <div class="mb-3">
+                    <label for="phoneNumber" class="form-label">Phone Number:</label>
+                    <input
+                      type="text"
+                      id="phoneNumber"
+                      formControlName="phoneNumber"
+                      class="form-control"
+                      placeholder="Enter your phone number"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <button
+                      type="button"
+                      class="btn btn-primary btn-block"
+                      (click)="sendOTP()"
+                      [disabled]="isOTPSent"
+                    >
+                      {{ isOTPSent ? 'Resend OTP' : 'Send OTP' }}
+                    </button>
+                  </div>
+                  <div class="mb-3" *ngIf="isOTPSent">
+                    <label for="otp" class="form-label">Enter OTP:</label>
+                    <input
+                      type="text"
+                      id="otp"
+                      formControlName="otp"
+                      class="form-control"
+                      placeholder="Enter OTP"
+                    />
+                  </div>
+                  <div class="mb-3" *ngIf="isOTPSent">
+                    <button type="submit" class="btn btn-success btn-block">Login</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+
+
+  

@@ -1,55 +1,69 @@
+.product-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
 .product-card {
-    display: flex;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    margin: 10px;
-    padding: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .product-image {
-    flex: 1;
-    max-width: 150px;
-    margin-right: 20px;
-    /* You can add styles for the product image here if available */
-  }
-  
-  .product-details {
-    flex: 3;
-  }
-  
-  .product-title {
-    font-size: 1.25rem;
-    margin: 0;
-    color: #333;
-  }
-  
-  .product-description {
-    margin-top: 5px;
-    font-size: 0.875rem;
-    color: #777;
-  }
-  
-  .product-price {
-    margin-top: 10px;
-    font-size: 1.25rem;
-    font-weight: bold;
-    color: #e47911; /* Amazon's price color */
-  }
-  
-  .add-to-cart-button {
-    margin-top: 15px;
-    padding: 8px 16px;
-    background-color: #f0c14b; /* Amazon's button color */
-    color: #111;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .add-to-cart-button:hover {
-    background-color: #ddb347; /* Darker color on hover */
-  }
-  
+  width: calc(25% - 20px);
+  margin: 10px;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-card-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.product-image {
+  width: 150px;
+  height: 150px;
+  background-color: #f0f0f0;
+  /* Add styles for image */
+}
+
+.product-details {
+  text-align: center;
+}
+
+.product-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.product-description {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.product-price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.add-to-cart-button {
+  background-color: #ff5722;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.add-to-cart-button:hover {
+  background-color: #f44336;
+}

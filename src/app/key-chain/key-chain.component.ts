@@ -14,6 +14,8 @@ export class KeyChainComponent implements OnInit {
   ngOnInit(): void {
     this.http.get('assets/json/product.json').subscribe((data: any)=> {
       this.products = data.products;
+      console.log(this.products);
+      
     })
   }
 

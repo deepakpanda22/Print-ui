@@ -7,17 +7,23 @@ import { HomeComponent } from './home/home.component';
 import { HeadersComponent } from './headers/headers.component';
 import { KeyChainComponent } from './key-chain/key-chain.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { LoginComponent } from './login/login.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { FooterComponent } from './footer/footer.component';
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     HeadersComponent,
-    KeyChainComponent
+    KeyChainComponent,
+    LoginComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
