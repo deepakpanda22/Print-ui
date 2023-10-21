@@ -10,6 +10,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FooterComponent } from './footer/footer.component';
+import { ViewCartComponent } from './view-cart/view-cart.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +18,8 @@ import { FooterComponent } from './footer/footer.component';
     HeadersComponent,
     KeyChainComponent,
     LoginComponent,
-    FooterComponent
+    FooterComponent,
+    ViewCartComponent
   ],
   imports: [
     BrowserModule,

@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { HeadersComponent } from './headers/headers.component';
 import { KeyChainComponent } from './key-chain/key-chain.component';
 import { LoginComponent } from './login/login.component';
+import { ViewCartComponent } from './view-cart/view-cart.component';
 
 const routes: Routes = [
   {
@@ -17,6 +18,10 @@ const routes: Routes = [
   {
     component: LoginComponent,
     path: 'login'
+  },
+  {
+    component: ViewCartComponent,
+    path: 'cart'
   }
   
 ];

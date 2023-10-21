@@ -1,0 +1,19 @@
+<div class="cart-container">
+  <h2>Cart</h2>
+
+  <div class="row">
+    <div class="card" *ngFor="let item of cartItems">
+      <div class="product-container">
+        <div class="product-image">
+          <!-- You can add an image here if you have one in your JSON data -->
+          <img src="{{item.imageUrl}}" alt="" style="max-width: 100px; height: auto;">
+        </div>
+        <div class="product-name">
+          <h6>{{item.name}}</h6>
+          <p>Price: {{item.price}}</p>
+          <button class="clear-btn btn btn-danger" type="reset" (click)="clearAll(item)">Clear</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
